@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.png">
+	<script defersrc="js"></script>
+	<script src="/js/jquery.js"></script>
+	<title>Генератор адресных табличек Курска</title>
+</head>
+
+<body>
+
+	<div>
+		<h1>Генератор адресных табличек Курска</h1>
+		<p>Просто генератор табличек сделанный по образу и подобие представленного примера кафедры программной инженерии
+			ЮЗГУ по назначению ректора</p>
+	</div>
+
+	<!--Сам генератор-->
+	<div class='fields'>
+		<!-- блок под генератор -->
+		<div>
+			<p>Название</p>
+			<input type="text" name="streetName">
+			<!--Наименование улицы-->
+
+			<p>Тип (Улица / Переулок / Проспект)</p>
+			<input type="text" name="type">
+
+			<!--
+			<p>&larr; Первый дом</p>
+			<input type="text" name="startNumber">
+
+			<p>&rarr;</p>
+			-->
+
+			<p>Название на английском</p>
+			<!--Наименование на английском-->
+			<input type="text" name="streetNameEnglish">
+
+			<p>Номер дома</p>
+			<input type="text" name="">
+
+			<input type="button" name="generateSign" value="Сгенерировать табличку">
+
+		</div>
+
+	</div>
+
+	
+
+	<div class="sign">
+		<!--  Контейнер под отрисовку таблички непосредственно -->
+
+	</div>
+
+	<h2>Курск/ЮЗГУ</h2>
+</body>
+
+</html>
