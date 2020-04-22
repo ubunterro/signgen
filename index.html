@@ -3,15 +3,17 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 	<link href="styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="favicon.png">
-	<script defersrc="js"></script>
-	<script src="/js/jquery.js"></script>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/previewGen.js"></script>
+
 	<title>Генератор адресных табличек Курска</title>
 </head>
 
 <body>
-
 	<div>
 		<h1>Генератор адресных табличек Курска</h1>
 		<p>Просто генератор табличек сделанный по образу и подобие представленного примера кафедры программной инженерии
@@ -23,27 +25,27 @@
 		<!-- блок под генератор -->
 		<div>
 			<p>Название</p>
-			<input type="text" name="streetName">
+			<input type="text" id="fieldStreetName">
 			<!--Наименование улицы-->
 
 			<p>Тип (Улица / Переулок / Проспект)</p>
-			<input type="text" name="type">
+			<input type="text" id="fieldStreetType">
 
 			<!--
 			<p>&larr; Первый дом</p>
-			<input type="text" name="startNumber">
+			<input type="text" id="startNumber">
 
 			<p>&rarr;</p>
 			-->
 
 			<p>Название на английском</p>
 			<!--Наименование на английском-->
-			<input type="text" name="streetNameEnglish">
+			<input type="text" id="fieldStreetNameEnglish">
 
 			<p>Номер дома</p>
-			<input type="text" name="">
+			<input type="text" id="fieldHouseNumber">
 
-			<input type="button" name="generateSign" value="Сгенерировать табличку">
+			<input type="button" id="buttonGenerateSign" value="Сгенерировать табличку">
 
 		</div>
 
@@ -51,12 +53,17 @@
 
 	
 
-	<div class="sign">
+	<div class="signPreview">
 		<!--  Контейнер под отрисовку таблички непосредственно -->
-
+		<p id = "signStreetType"></p>
+		<p id = "signStreetName"></p>
+		<p id = "signHouseNumber"></p>
+		<p id = "signStreetNameEnglish"></p>
 	</div>
 
-	<h2>Курск/ЮЗГУ</h2>
+	<footer>
+		<h2>Курск/ЮЗГУ</h2>
+	</footer>
 </body>
 
 </html>
